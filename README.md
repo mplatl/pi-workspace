@@ -10,6 +10,7 @@ AI-powered Business Central development workspace using [pi coding agent](https:
 | **BC RAG Indexing Skill** | `.pi/skills/bc-rag-indexing/SKILL.md` | Index AL code & symbols into Qdrant collections |
 | **Developer Agent** | `.pi/prompts/bc-developer.md` | `/bc-developer` — best-practice AL coding |
 | **Consulting Agent** | `.pi/prompts/bc-consultant.md` | `/bc-consultant` — standard-first BC analysis |
+| **BC Deploy Skill** | `skills/bc-extension-deploy/SKILL.md` | Deploy .app files to BC SaaS sandbox via Automation API |
 | **Project Context** | `AGENTS.md` | Auto-loaded by pi at startup |
 | **Environment Template** | `.env.example` | All required env vars with documentation |
 
@@ -67,6 +68,21 @@ After building an extension, index it for AI-assisted search:
 rag_index --collection "bc-24.0-de" --path "./src"
 rag_query --collection "bc-24.0-de" --query "how is sales posting handled"
 ```
+
+## Deployment Scripts
+
+Deploy an AL app to a BC SaaS sandbox using the Automation API v2.0:
+
+```bash
+# 1. Build your app
+# 2. Deploy
+./scripts/deploy-to-bc.sh ./output/MyApp.app Sandbox "CRONUS AT"
+
+# 3. Check deployment status
+./scripts/check-bc-deployment.sh Sandbox "CRONUS AT"
+```
+
+Requires `.env` variables: `BC_TENANT_ID`, `BC_CLIENT_ID`, `BC_CLIENT_SECRET`.
 
 ## Repository
 
