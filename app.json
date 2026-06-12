@@ -1,0 +1,33 @@
+{
+  "id": "76b48c6d-376b-4a9b-911b-f8b525bc4010",
+  "name": "MIP Generic Import",
+  "publisher": "MIP",
+  "version": "1.0.0.0",
+  "brief": "Generelle Import-Schnittstelle für Buchblätter",
+  "description": "Flexible, mehrfach konfigurierbare Import-Schnittstelle für Buchblätter in Business Central. Unterstützt CSV-Import mit Spalten-Mapping, Wert-Transformationen, Validate-Steuerung und Dubletten-Erkennung.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "https://mip-dev.atlassian.net/wiki/spaces/BGI/",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "25.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50049
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "14.0",
+  "target": "Cloud",
+  "features": [
+    "TranslationFile"
+  ]
+}
