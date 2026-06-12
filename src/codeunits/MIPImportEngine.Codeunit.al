@@ -2,8 +2,9 @@
 // Codeunit: MIP Import Engine
 // ----------------------------------------------------------------------------
 // Zentrale Import-Verarbeitungslogik.
-// Liest eine Datei aus der MIP Import File-Tabelle, parst CSV,
-// führt Spalten-Mapping und Validate durch und erzeugt Buchblattzeilen.
+// Liest eine Datei aus der MIP Import File-Tabelle, delegiert Parsing
+// per Interface MIP Import Parser, führt Spalten-Mapping und Validate
+// durch und erzeugt Buchblattzeilen.
 // ----------------------------------------------------------------------------
 
 codeunit 50000 "MIP Import Engine"
@@ -34,7 +35,7 @@ codeunit 50000 "MIP Import Engine"
 
         SetupHeader.Get(ImportFile."Setup Code");
 
-        ParseCSV();
+        ParseFile();
 
         if SetupColumn.IsEmpty() then
             AutoCreateColumns();
@@ -74,100 +75,14 @@ codeunit 50000 "MIP Import Engine"
     end;
 
     /// <summary>
-    /// Parst die CSV-Datei aus dem File Content BLOB und schreibt die Zeilen in den Data Buffer.
+    /// Delegiert das Datei-Parsing per Interface an den konfigurierten Parser.
     /// </summary>
-    local procedure ParseCSV()
+    local procedure ParseFile()
     var
-        InStream: InStream;
-        TextLine: Text;
-        LineNo: Integer;
-        LineCount: Integer;
-        Columns: List of [Text];
-        ColumnNames: List of [Text];
-        JSONBuilder: TextBuilder;
-        i: Integer;
+        Parser: Interface "MIP Import Parser";
     begin
-        ImportFile."File Content".CreateInStream(InStream);
-
-        // Erste Zeile lesen (Header oder erste Datenzeile)
-        if not InStream.EOS then begin
-            InStream.Read(TextLine);
-            LineNo := 1;
-
-            if SetupHeader."First Row Is Header" then begin
-                // Header-Zeile: Spaltennamen extrahieren
-                ColumnNames := SplitLine(TextLine, SetupHeader."Column Separator");
-                ImportFile."Lines Total" -= 1; // Header zählt nicht als Datenzeile
-            end
-            else begin
-                // Erste Zeile ist Datenzeile
-                Columns := SplitLine(TextLine, SetupHeader."Column Separator");
-                WriteDataBuffer(ImportFile."Entry No.", LineNo, Columns, ColumnNames);
-            end;
-        end;
-
-        // Restliche Datenzeilen lesen
-        while not InStream.EOS do begin
-            InStream.Read(TextLine);
-            LineNo += 1;
-            Columns := SplitLine(TextLine, SetupHeader."Column Separator");
-            WriteDataBuffer(ImportFile."Entry No.", LineNo, Columns, ColumnNames);
-        end;
-
-        ImportFile."Lines Total" := LineNo;
-    end;
-
-    /// <summary>
-    /// Schreibt eine geparste Zeile als JSON in den Data Buffer.
-    /// </summary>
-    local procedure WriteDataBuffer(FileEntryNo: Integer; RowNo: Integer; Columns: List of [Text]; ColumnNames: List of [Text])
-    var
-        JSONBuilder: TextBuilder;
-        OutStream: OutStream;
-        i: Integer;
-        ColName: Text;
-    begin
-        JSONBuilder.Clear();
-        JSONBuilder.Append('{');
-        for i := 1 to Columns.Count() do begin
-            if i > 1 then
-                JSONBuilder.Append(',');
-            if i <= ColumnNames.Count() then
-                ColName := ColumnNames.Get(i)
-            else
-                ColName := StrSubstNo('Column_%1', i);
-
-            JSONBuilder.Append('"' + ColName + '":"' + Columns.Get(i) + '"');
-        end;
-        JSONBuilder.Append('}');
-
-        DataBuffer.Init();
-        DataBuffer."Import File Entry No." := FileEntryNo;
-        DataBuffer."Row No." := RowNo;
-        DataBuffer."Raw Data JSON".CreateOutStream(OutStream);
-        OutStream.Write(JSONBuilder.ToText());
-        DataBuffer.Status := DataBuffer.Status::Pending;
-        DataBuffer.Insert();
-    end;
-
-    /// <summary>
-    /// Zerlegt eine CSV-Zeile anhand des Separators.
-    /// </summary>
-    local procedure SplitLine(TextLine: Text; Separator: Text) Columns: List of [Text]
-    var
-        Pos: Integer;
-    begin
-        repeat
-            Pos := TextLine.IndexOf(Separator);
-            if Pos > 0 then begin
-                Columns.Add(CopyStr(TextLine, 1, Pos));
-                TextLine := CopyStr(TextLine, Pos + StrLen(Separator));
-            end
-            else begin
-                Columns.Add(TextLine);
-                TextLine := '';
-            end;
-        until TextLine = '';
+        Parser := SetupHeader."Parser Format" as Interface "MIP Import Parser";
+        Parser.Parse(ImportFile, SetupHeader, DataBuffer);
     end;
 
     /// <summary>
