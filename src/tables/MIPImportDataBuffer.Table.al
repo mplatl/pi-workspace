@@ -3,15 +3,14 @@
 // ----------------------------------------------------------------------------
 // Temporäre Tabelle für die Rohdaten einer Import-Datei.
 // Speichert die geparsten Zeilen als JSON pro Quellzeile.
-// Wird nach erfolgreichem Import geleert.
+// Wird nach erfolgreichem Import per Codeunit geleert (kein Temporary=true
+// da die Tabelle als SourceTable für die Preview-Page dient).
 // ----------------------------------------------------------------------------
 
 table 50004 "MIP Import Data Buffer"
 {
     Caption = 'MIP Import Data Buffer';
     DataClassification = CustomerContent;
-    Temporary = true;
-
     fields
     {
         /// <summary>
