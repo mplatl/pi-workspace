@@ -11,16 +11,37 @@ Business Central 28 — technische Dokumentation mit RAG-Quellcode-Referenz und 
 
 ## Regeln
 
-### 1. Quelle: RAG-Collection `28.1.49838.49886.at`
+### 1. Quellen: Zwei RAG-Collections
 
-Alle technischen Inhalte (Felder, Prozeduren, Events, Namespaces) aus der RAG-Collection beziehen.
+#### A) `28.1.49838.49886.at` — BC28 Quellcode (Primärquelle)
+
+Felder, Prozeduren, Events, Namespaces, Objekt-IDs aus dem Source Code.
 Bei Setup-Tabellen das vollständige `.Table.al`-File über `read` einlesen.
 
 ```bash
 rag_query --collection "28.1.49838.49886.at" --query "<suchbegriffe>" --limit 15
 ```
 
-Quellcode-Pfade sind unter `/home/michael/Dokumente/development/ai/onprem/28.1.49838.49886/at/`.
+Quellcode-Pfade unter `/home/michael/Dokumente/development/ai/onprem/28.1.49838.49886/at/`.
+
+#### B) `bc-devitpro-help` — Microsoft Docs Dev/IT-Pro (Ergänzung)
+
+API-Referenzen, Erklärungen, Best Practices, Analyzer-Regeln aus dem Microsoft-eigenen
+`dynamics365smb-devitpro-pb`-Repository. Hilfreich für:
+- Feld-Bedeutungen und -Zusammenhänge jenseits des Codes
+- API-Ressource-Beschreibungen (`dynamics_generalledgersetup.md` u.ä.)
+- Upgrade-/Migration-Hinweise
+- AL-Entwicklerbestpractices
+
+```bash
+rag_query --collection "bc-devitpro-help" --query "<suchbegriffe>" --limit 10
+```
+
+Quellcode-Pfade unter `/home/michael/Dokumente/businesscentral/microsoftdocs-repos/dynamics365smb-devitpro-pb/`.
+
+**Ablauf:** Immer zuerst `28.1.49838.49886.at` für den Source-Code befragen,
+danach `bc-devitpro-help` für Kontext, Erklärungen und API-Referenzen. Beide
+Ergebnisse in die Dokumentation einfließen lassen.
 
 ### 2. Sprache: Deutsch
 
