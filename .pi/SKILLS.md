@@ -8,5 +8,6 @@ Project-level skills in `.pi/skills/`:
 | `bc-linux-setup` | `.pi/skills/bc-linux-setup/SKILL.md` | BC development on Linux with BcContainerHelper |
 | `bc-rag-indexing` | `.pi/skills/bc-rag-indexing/SKILL.md` | Index BC source/symbols into Qdrant RAG |
 | `bc-artifacts` | `.pi/skills/bc-artifacts/SKILL.md` | Download & extract BC artifacts (base app source) |
+| `bc-documentation` | `.pi/skills/bc-documentation/SKILL.md` | BC28 technische Doku mit RAG + User-Story-Beispielen (Deutsch, 3 Bsp/Feld) |
 
 See the individual SKILL.md files for full instructions.
