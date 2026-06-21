@@ -43,13 +43,26 @@ Quellcode-Pfade unter `/home/michael/Dokumente/businesscentral/microsoftdocs-rep
 danach `bc-devitpro-help` für Kontext, Erklärungen und API-Referenzen. Beide
 Ergebnisse in die Dokumentation einfließen lassen.
 
-### 2. Sprache: Deutsch
+### 2. Sprache: Deutsch mit offiziellen BC-Übersetzungen
 
 Die gesamte Dokumentation wird auf Deutsch geführt.
 
 - Feldbeschreibungen: Deutsch
 - Beispiele: Deutsch
-- Technische Begriffe: eingedeutscht wo üblich (Ereignis, Namensraum, Buchungsblatt, Auftragswarteschlange...)
+- **Feldbezeichner:** MÜSSEN die offiziellen BC-Übersetzungen aus den `.xlf`-Dateien verwenden
+- Übersetzungsdatei: `Base Application/Source/Base Application/Translations/Base Application.de-AT.xlf`
+- Ermittlung der korrekten Überschrift:
+  ```bash
+  rg -B2 "General Ledger Setup - Field XYZ - Property Caption" "Base Application.de-AT.xlf" | rg "(source>|target>)"
+  ```
+- Technische Begriffe: eingedeutscht wo üblich (Ereignis, Namensraum, Buchungsblatt, Aufgabenwarteschlange...)
+- **Wichtige offizielle Übersetzungen:**
+  - LCY / Local Currency → Mandantenwährung
+  - Job Queue → Aufgabenwarteschlange (NICHT Auftragswarteschlange)
+  - Register Time → Protokollzeit
+  - Unrealized VAT → Unrealisierte MwSt.
+  - Adjust for Payment Disc. → Skonto berichtigen
+  - Pmt. Disc. Excl. VAT → Skonto v. Nettobetrag
 - **Ausnahme:** AL-Code-Zitate und Quellcode-Ausschnitte bleiben im englischen Original
 
 ### 3. Beispiele: User-Story-Stil
