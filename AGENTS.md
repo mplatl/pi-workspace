@@ -71,3 +71,26 @@ Copy `.env.example` to `.env` and configure:
 - XML-doc all public procedures
 - Test codeunits for all business logic
 - IDs within assigned range in app.json
+
+## BC28 Documentation (Jekyll / GitHub Pages)
+
+Ziel-Repo: `git@github.com:MPSWIT/bc28-documentation` (branch `main`)
+Lokal: `./bc28-documentation/` (eigenständiges Git-Repo, kein Submodul)
+
+### Navigation: Vertikales Baum-Menü
+
+Für klickbare Links in Monospace-Baumstrukturen **niemals** Markdown-Codeblöcke (```) verwenden — Liquid `{{ }}` Tags werden darin **nicht** verarbeitet. **Immer `<pre>` + `<a>` HTML verwenden:**
+
+```html
+<pre>
+4. Finanzwesen
+ │
+ ├── <a href="{{ '/04-finance/fibu-einrichtung/' | relative_url }}">Fibu-Einrichtung</a>
+ ├─▶ Aktuelle Seite  ← Sie sind hier
+ └── <a href="{{ '/04-finance/entwickler/' | relative_url }}">Entwickler-Referenz</a>
+</pre>
+```
+
+- `├─▶` markiert die aktuelle Seite (nicht verlinkt)
+- `&amp;` für `&` in HTML-Attributen
+- Commit + Push mit: `GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519_private -o IdentitiesOnly=yes" git push origin main`
