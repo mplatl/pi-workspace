@@ -13,9 +13,10 @@ BcContainerHelper läuft auf Linux **eingeschränkt** — das Ausführen von BC 
 |---------|--------|
 | Artifact-URL holen | `Get-BCArtifactUrl -type sandbox -country at -select latest` |
 | Artifacts downloaden | `Download-Artifacts -artifactUrl $url -basePath ~/Dokumente/development/ai/` |
-| Kompilieren | `alc` (automatisch von BcContainerHelper installiert) |
+| Kompilieren (alc) | `alc /project:"." /packagecachepath:".alpackages" /outfolder:"./output"` |
 | Deployen (SaaS Sandbox) | Device-Login + `Publish-PerTenantExtensionApps` |
-| Deployen (lokaler Container) | `curl` → Dev Endpoint `:7049/BC/dev/apps` |
+| Deployen (lokaler Container) | `curl` → Dev Endpoint `:7049/BC/dev/apps?SchemaUpdateMode=forcesync` |
+| Webclient starten | `docker compose exec -d bc /bc/scripts/start-webclient.sh` |
 | pwsh-Start | `/home/michael/powershell/pwsh -NoProfile` |
 | sudo-Workaround | `PATH="/home/michael/.local/bin:$PATH" pwsh ...` |
 
@@ -146,6 +147,29 @@ cd ~/Dokumente/development/ai/bc
 
 ## 4. Compile & Deployment
 
+### Lokale Kompilierung mit `alc`
+
+Der AL Compiler (`alc`) ist ein nativer Linux-ELF-Binary und wird von BcContainerHelper installiert:
+
+```bash
+# alc-Pfad finden
+find ~/.bccontainerhelper -name alc -type f 2>/dev/null
+# → ~/.bccontainerhelper/alLanguageExtension/17.0.2273547/extension/bin/linux/alc
+
+# Kompilieren (ACHTUNG: /outfolder: für Ordner, /out: für Datei!)
+alc /project:"/pfad/zum/projekt" \
+    /packagecachepath:"/pfad/zum/projekt/.alpackages" \
+    /outfolder:"/pfad/zum/projekt/output"
+```
+
+> **⚠️ Wichtig:** `alc` unterscheidet zwischen `/out:<datei>` (expliziter Output-Dateiname) und `/outfolder:<verzeichnis>` (Zielordner, Dateiname wird aus app.json generiert). **Immer `/outfolder:` verwenden**, sonst `AL1012: Could not write to output file`.
+
+```bash
+# Output prüfen
+ls -la ./output/
+# → Demo_RC Template_1.0.0.0.app
+```
+
 ### Deployment (vollautomatisch, zero user interaction)
 
 ```bash
@@ -168,8 +192,11 @@ Für den lokalen BC-on-Linux Container (`msdyn365bconlinux`) wird der **Dev Endp
 cd ~/Dokumente/development/MsDyn365Bc.On.Linux
 docker compose up -d
 
-# Healthcheck abwarten
-./scripts/wait-for-bc-healthy.sh
+# Healthcheck abwarten (OData-Endpoint auf Port 7048)
+until curl -sf -o /dev/null -u BCRUNNER:Admin123! http://localhost:7048/BC/ODataV4/Company; do
+  echo "Waiting for BC..."
+  sleep 5
+done
 
 # App publizieren
 curl -u BCRUNNER:Admin123! \
@@ -183,18 +210,86 @@ curl -u BCRUNNER:Admin123! \
 - **HTTP 422** mit `"already"` im Body → App bereits installiert (kein Fehler)
 - **HTTP 422** ohne `"already"` → Fehler (z.B. fehlende Abhängigkeit, Schema-Konflikt)
 
+> **⚠️ Dev Endpoint GET liefert 404:** `curl -u BCRUNNER:Admin123! "http://localhost:7049/BC/dev/apps"` → `404 Not Found`. Der Endpoint unterstützt nur POST (Publish). Deployment-Erfolg stattdessen über Container-Logs prüfen:
+> ```bash
+> docker logs msdyn365bconlinux-bc-1 2>&1 | grep "appPublishedAs"
+> # → Added 27 text data lines ... applicationName: 'RC Template' ... appPublishedAs: 'Dev'
+> ```
+
 **Container-Details:**
 
 | Eigenschaft | Wert |
 |---|---|
 | Projekt | `~/Dokumente/development/MsDyn365Bc.On.Linux/` |
 | Container | `msdyn365bconlinux-bc-1` |
-| Dev Port | 7049 |
+| Dev Port | 7049 (nur POST) |
 | OData Port | 7048 |
 | Benutzer | `BCRUNNER` / `Admin123!` |
-| Publizierte Apps prüfen | `curl -u BCRUNNER:Admin123! "http://localhost:7049/BC/dev/apps"` |
+| Deployment prüfen | `docker logs msdyn365bconlinux-bc-1 2>&1 \| grep "appPublishedAs"` |
 
-## 5. Dev Endpoint vs. Automation API
+### Container-Reset bei Stale-Deployments
+
+Wenn Apps mehrfach deployed wurden und **Duplicate Package ID / Multiple App Instance** auftreten, hilft nur ein kompletter Reset:
+
+```bash
+cd ~/Dokumente/development/MsDyn365Bc.On.Linux
+
+# Alles stoppen und löschen (inkl. Datenbank)
+docker compose down
+docker rm msdyn365bconlinux-sql-1
+
+# Frisch starten
+docker compose up -d
+```
+
+Danach **Version in app.json erhöhen** (z.B. `1.0.0.0` → `1.0.0.1`), neu kompilieren und deployen. Der Dev Endpoint erlaubt keine Überschreibung derselben Version, wenn die App-ID bereits in der Datenbank existiert.
+
+```bash
+# Gesundheitscheck (OData auf Port 7048)
+until curl -sf -o /dev/null -u BCRUNNER:Admin123! http://localhost:7048/; do
+  echo "Warte auf BC..."
+  sleep 5
+done
+
+# Deployment
+curl -u BCRUNNER:Admin123! \
+  -X POST \
+  -F "file=@<app-file.app>;type=application/octet-stream" \
+  "http://localhost:7049/BC/dev/apps?SchemaUpdateMode=forcesync"
+```
+
+### Webclient starten (opt-in)
+
+Der Webclient ist ein experimentelles Feature und muss manuell gestartet werden:
+
+```bash
+# Im laufenden Container
+cd ~/Dokumente/development/MsDyn365Bc.On.Linux
+docker compose exec -d bc /bc/scripts/start-webclient.sh
+
+# Oder beim Container-Start
+BC_WEBCLIENT=1 docker compose up -d
+```
+
+**URL:** `http://localhost:8080/` (Login: BCRUNNER / Admin123!)  
+**Docs:** `~/Dokumente/development/MsDyn365Bc.On.Linux/docs/WEBCLIENT-POC.md`
+
+> **⚠️ Webclient-Basis-Pfad:** Der BC-on-Linux Webclient läuft unter `/` (nicht `/BC/` wie im Windows-Container). Nach dem Login landet man direkt auf der Rollencenter-Startseite. Kein `/BC/`-Präfix anhängen!
+
+## 5. Container Endpoints (BC-on-Linux)
+
+| Port | Dienst | URL (lokal) | Auth |
+|------|--------|-------------|------|
+| 8080 | **Webclient** | `http://localhost:8080/` | BCRUNNER / Admin123! |
+| 7048 | **OData** | `http://localhost:7048/BC/ODataV4/` | Basic Auth |
+| 7049 | **Dev Endpoint** | `http://localhost:7049/BC/dev/apps` | Basic Auth, nur POST |
+| 7052 | **API v2.0** | `http://localhost:7052/BC/api/` | Basic Auth |
+| 7045 | **Management** | `http://localhost:7045/` | (variiert) |
+| 7085 | **Client Services** | `ws://localhost:7085/` | Internal (NST→Webclient) |
+
+> **Hinweis:** Port 8080 nur verfügbar wenn Webclient gestartet wurde (`BC_WEBCLIENT=1` oder `start-webclient.sh`).
+
+## 6. Dev Endpoint vs. Automation API
 
 Für Sandbox-Umgebungen den **Dev Endpoint** verwenden:
 
@@ -209,7 +304,16 @@ Publish-PerTenantExtensionApps -bcAuthContext $auth -environment Sandbox -appFil
 
 Der Dev Endpoint erlaubt mehrfaches Deployment derselben Version ohne Versions-Bump.
 
-## 6. Deployment-Status bei Fehlern prüfen
+## 7. Deployment-Status bei Fehlern prüfen
+
+### Im BC-on-Linux Container
+
+```bash
+# Container-Logs auf Deployment-Ereignisse durchsuchen
+docker logs msdyn365bconlinux-bc-1 2>&1 | grep -E "appPublishedAs|Compiling the application|error AL"
+```
+
+### In SaaS Sandbox (PowerShell)
 
 ```powershell
 $headers = @{ "Authorization" = "Bearer $($auth.AccessToken)" }
@@ -221,7 +325,7 @@ $status = Invoke-WebRequest -Headers $headers `
 ($status.Content | ConvertFrom-Json).value | Where-Object Name -like "*Hello*"
 ```
 
-## 7. ID-Range-Konflikte vermeiden
+## 8. ID-Range-Konflikte vermeiden
 
 BC lehnt Apps ab, die Objekt-IDs verwenden, die bereits von anderen installierten Apps belegt sind.
 
@@ -236,7 +340,7 @@ $apps = Get-BcInstalledExtensions -bcAuthContext $auth -environment Sandbox `
 
 PTE-Apps (Per-Tenant-Extension) dürfen IDs zwischen 50000–99999 verwenden.
 
-## 8. Tenant-Informationen
+## 9. Tenant-Informationen
 
 | Feld | Wert |
 |------|------|
@@ -256,7 +360,7 @@ PTE-Apps (Per-Tenant-Extension) dürfen IDs zwischen 50000–99999 verwenden.
 
 Client Secret steht in `.env`.
 
-## 9. Authentifizierung (Client Credentials)
+## 10. Authentifizierung (Client Credentials)
 
 ```bash
 ACCESS_TOKEN=$(curl -s -X POST "https://login.microsoftonline.com/ead083dd-f7cb-4a4f-9016-9dca1135a9d3/oauth2/v2.0/token" \
