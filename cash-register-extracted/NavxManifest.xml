@@ -1,0 +1,20 @@
+<Package xmlns="http://schemas.microsoft.com/navx/2015/manifest">
+  <App Id="5f700cc9-dd17-4395-a3f6-226349665bd7" Name="COSMO Cash Register" Publisher="Cosmo Consult" Brief="COSMO Cash Register" Description="COSMO Cash Register" Version="22.0.13.0" CompatibilityId="0.0.0.0" PrivacyStatement="https://www.cosmoconsult.com/data-protection" EULA="https://cdn.cosmoconsult.com/EULA/COSMO_CONSULT_AT_EULA_de.pdf" Help="https://docs.cosmoconsult.com" HelpBaseUrl="" ContextSensitiveHelpUrl="https://docs.cosmoconsult.com/de-de/business-central/cash-register/" Url="https://www.cosmoconsult.com" Logo="/logo/BC_Cash-Register_256x256.png" Platform="22.0.0.0" Application="22.0.0.0" Runtime="11.0" Target="Cloud" ShowMyCode="False" ApplicationInsightsConnectionString="InstrumentationKey=ebbf381c-1798-4807-b43c-a54d6190c77c;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/" />
+  <IdRanges>
+    <IdRange MinObjectId="1070540" MaxObjectId="1070599" />
+  </IdRanges>
+  <Dependencies>
+    <Dependency Id="6f1e3666-7813-4802-9e59-9f6a66cb3276" Name="Cosmo Core Library AT" Publisher="Cosmo Consult" MinVersion="19.1.7.0" CompatibilityId="0.0.0.0" />
+    <Dependency Id="551d85cb-2152-4144-9464-a16791aff492" Name="COSMO Licensing" Publisher="Cosmo Consult" MinVersion="2.3.0.0" CompatibilityId="0.0.0.0" />
+  </Dependencies>
+  <InternalsVisibleTo />
+  <ScreenShots />
+  <SupportedLocales />
+  <Features>
+    <Feature>TRANSLATIONFILE</Feature>
+  </Features>
+  <PreprocessorSymbols />
+  <SuppressWarnings />
+  <ResourceExposurePolicy AllowDebugging="true" AllowDownloadingSource="false" IncludeSourceInSymbolFile="false" ApplyToDevExtension="false" />
+  <KeyVaultUrls />
+</Package>

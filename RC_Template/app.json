@@ -1,0 +1,30 @@
+{
+  "id": "c1a2b3d4-e5f6-7890-abcd-ef1234567890",
+  "name": "RC Template",
+  "publisher": "Demo",
+  "version": "1.0.0.0",
+  "brief": "Leeres Rollencenter als Vorlage für Demo-Apps (BC28)",
+  "description": "Minimales Rollencenter-Template mit Standalone-Page und PageExtension-Beispiel. Dient als Ausgangsbasis für neue Business Central Demo-Apps.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "Base Application",
+      "publisher": "Microsoft",
+      "version": "28.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "28.0.0.0",
+  "application": "28.0.0.0",
+  "idRanges": [
+    { "from": 60000, "to": 60099 }
+  ],
+  "runtime": "14.0",
+  "features": ["TranslationFile"],
+  "target": "OnPrem"
+}

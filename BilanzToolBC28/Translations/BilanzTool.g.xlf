@@ -1,0 +1,949 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="BilanzTool">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1649841651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Grouping Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1649841651 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1649841651 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1649841651 - Field 2853697946 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Editable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Field Editable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1649841651 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1649841651 - Field 1051699658 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Style Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Field Style Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1649841651 - Field 2866107188 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Style Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Field Style Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1649841651 - Field 1296677775 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Style Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Field Style Total - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1649841651 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Acc. Grouping Header - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 518441871 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Budget</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Amt Budget - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 4164373514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Current</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Amt Curr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 2629346099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Previous</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Amt Prev - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 1870117237 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Year-2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Amt Prev2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 2932189050 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance at Period Start</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Balance at Period Start - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 3091807845 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balancing Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Balancing Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 2428101916 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Business Unit Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Business Unit Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 3015655204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corresponding Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Corresponding Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 2396322668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Dimension Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 3852983238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field G/L Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 1725171672 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field GL Acc. Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 4053332385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 2469991540 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Grouping Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 1442081040 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Indent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Indent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 3241607241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KPI Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field KPI Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 83163012 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Node Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Node Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 4018693973 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbering Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Numbering Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 521919925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reverse Sign</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Reverse Sign - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 3340232780 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Thereof Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Thereof Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 311823548 - Field 1024241167 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Account Grouping - Field Use Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Checklist</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Field 293070022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finished</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Field Finished - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Field 158172202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Field Line Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Field 158172202 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Header,Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Field Line Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Field 949215307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Field No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Field 3994797191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Task</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Field Task - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1413100438 - Field 3379441404 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Template</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Checklist - Field Template - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537294969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed Asset Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Fixed Asset Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537294969 - Field 2553893575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Fixed Asset Grouping - Field Amount1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537294969 - Field 172016130 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Previous</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Fixed Asset Grouping - Field Amount2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537294969 - Field 1182491315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed Asset No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Fixed Asset Grouping - Field Fixed Asset No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537294969 - Field 4053332385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Fixed Asset Grouping - Field Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537294969 - Field 2469991540 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Fixed Asset Grouping - Field Grouping Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537294969 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Fixed Asset Grouping - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3537294969 - Field 83163012 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Node Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Fixed Asset Grouping - Field Node Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 2553893575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field Amount1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 172016130 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Previous Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field Amount2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 3304877602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Formula</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field Formula - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 667716316 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KPI Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field KPI Header Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 521919925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reverse Sign</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field Reverse Sign - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3060692656 - Field 478049462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Totaling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI - Field Totaling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4037470637 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KPI Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4037470637 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI Header - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4037470637 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT KPI Header - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List Values</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 636392376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 3645618463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Previous Year Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Amount Prev - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 1389794395 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Column No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Column No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 1627640004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Entry Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 4053332385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 2469991540 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Grouping Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 2464716035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List Value Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field List Value Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 2464716035 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Fixed Assets,Receivables,Liabilities,Accruals,Loans,Other</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field List Value Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 949215307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3932986216 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Caption,Posting</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT List Values - Field Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1188339646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Log</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1188339646 - Field 3362631854 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Timestamp</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Log - Field Entry Timestamp - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1188339646 - Field 1016130111 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Log - Field EntryNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1188339646 - Field 1789400218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Log - Field Level - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1188339646 - Field 1789400218 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trace,Debug,Info,Warning,Error</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Log - Field Level - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1188339646 - Field 3080618677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Message</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Log - Field Message - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 3760240054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Balance Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field Default Balance Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 977325209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Cashflow Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field Default Cashflow Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 807953793 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Depreciation Book</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field Default Depr. Book - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 4180227860 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default P&amp;L Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field Default PL Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 3254491004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Word Template</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field Default Word Template Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 3690479385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Batch Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field Gen. Journal Batch - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 3016508349 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Journal Template Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field Gen. Journal Template - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 2333076789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PrimaryKey</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field PrimaryKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 72483179 - Field 2163070740 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Retained Earnings Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Setup - Field Retained Earnings Acc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 473384764 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Word Template</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Word Template - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 473384764 - Field 2821711928 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BC Word Template Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Word Template - Field BC Template Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 473384764 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Word Template - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 473384764 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Word Template - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 473384764 - Field 3036236004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Template Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Word Template - Field Template Data - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 473384764 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BT Word Template - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197102755 - NamedType 1909238423" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No accounting period for date %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BT Date Management - NamedType NO_ACCOUNTING_PERIOD</note>
+        </trans-unit>
+        <trans-unit id="Page 311823548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Account Grouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 311823548 - Action 1250604559 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Account Grouping - Action DrillDown - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 311823548 - Action 4181015414 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Account Grouping - Action NewLine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1413100438 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Checklist</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Checklist - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2494469063 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Groupings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Grouping Headers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2494469063 - Action 1388609629 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Edit Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Grouping Headers - Action EditGrouping - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2494469063 - Action 1002420131 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Grouping Headers - Action Print - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4263009442 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KPIs</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT KPI List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3932986216 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List Values</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT List Values - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1237438786 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Navigation Pane - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1237438786 - Control 1283650361 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Navigation Pane - Control WelcomeText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Control 4112444282 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Control Headline - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 3122953986 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Groupings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action Groupings2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 2723408687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action Setup2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 1514883969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 792343850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action AppSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 3835349176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Groupings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action Groupings - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 3831369531 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KPIs</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action KPIs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 77316407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Word Templates</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action WordTemplates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 2327069496 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Financial Reports</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action FinancialReports - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 2451963715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance Sheet</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action BalanceSheet - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 2857238821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export to Excel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action ExportExcel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2361751747 - Action 3460634575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profit &amp; Loss</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Role Center - Action ProfitLoss - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 257064095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 257064095 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Card - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 257064095 - Control 1368504227 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Card - Control Journal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 257064095 - Control 2013594130 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Word Templates</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Card - Control Word - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 257064095 - Action 672734192 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Setup Wizard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Card - Action SetupWizard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 3957695446 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Configure additional account settings for the financial statements.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control AccountsHeading - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 3957695446 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control AccountsHeading - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 1982357436 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Choose Finish to save the setup. You can change all settings later from the BilanzTool Setup page.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control DoneHeading - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 1982357436 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>That's it!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control DoneHeading - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 2138601329 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select the default grouping headers for each financial statement type. These will be preselected when creating new reports.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control GroupingHeading - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 2138601329 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Account Groupings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control GroupingHeading - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 3579875586 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Choose Next to configure your default account groupings.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control NextSteps - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 3579875586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Let's go!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control NextSteps - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 2712442070 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This wizard helps you configure BilanzTool for creating financial statements directly in Business Central.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control WelcomeHeading - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 2712442070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Welcome to BilanzTool Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control WelcomeHeading - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 2045839491 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Configure the General Journal for automatic postings.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control JournalHeading - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Control 2045839491 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Control JournalHeading - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Action 2438272767 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Back</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Action ActionBack - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Action 3259912055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finish</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Action ActionFinish - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 303609694 - Action 914282563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Next</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Setup Wizard - Action ActionNext - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 222522109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Word Templates</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BT Word Templates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3559224760 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Balance to Excel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Export Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3559224760 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Export Balance - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3559224760 - Control 2115613238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Export Balance - Control BalanceDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3559224760 - Control 2543683326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Export Balance - Control GroupingCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3559224760 - Control 1554393068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include P&amp;L</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Export Balance - Control IncludePL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 689606195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance Sheet</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Print Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 689606195 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Print Balance - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 689606195 - Control 2115613238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Print Balance - Control BalanceDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 689606195 - Control 2543683326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Print Balance - Control GroupingCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3426480421 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profit &amp; Loss</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Print PL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3426480421 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Print PL - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3426480421 - Control 2115613238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Print PL - Control BalanceDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3426480421 - Control 2543683326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grouping</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BT Print PL - Control GroupingCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 3293457375 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile BT Profile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 3293457375 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finanzauswertungen und Jahresabschlüsse mit dem BilanzTool</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile BT Profile - Property ProfileDescription</note>
+        </trans-unit>
+        <trans-unit id="Enum 75849575 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Balancing Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 75849575 - EnumValue 661859261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assets</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Balancing Type - EnumValue Assets - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 75849575 - EnumValue 598849107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Liabilities</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Balancing Type - EnumValue Liabilities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 657022987 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT FA Node Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 657022987 - EnumValue 2060046985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed Asset</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT FA Node Type - EnumValue FA - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 657022987 - EnumValue 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT FA Node Type - EnumValue G/L Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1517470842 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Node Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1517470842 - EnumValue 3304877602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Formula</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Node Type - EnumValue Formula - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1517470842 - EnumValue 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Node Type - EnumValue G/L Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1517470842 - EnumValue 1821279055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Node Type - EnumValue Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1517470842 - EnumValue 245426702 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Node Type - EnumValue Total - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1529065463 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Numbering Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1529065463 - EnumValue 361277026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A. - Z.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Numbering Type - EnumValue A-Z - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1529065463 - EnumValue 1238786337 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a. - z.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Numbering Type - EnumValue Lowercase - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1529065463 - EnumValue 1508634494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manual</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Numbering Type - EnumValue Manual - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1529065463 - EnumValue 3219348357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1. - 9.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Numbering Type - EnumValue Numeric - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1529065463 - EnumValue 600201129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>I. - V.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Numbering Type - EnumValue Roman - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3063460797 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Statement Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3063460797 - EnumValue 25700210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Statement Type - EnumValue Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3063460797 - EnumValue 1890982077 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cashflow</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Statement Type - EnumValue Cashflow - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3063460797 - EnumValue 2076901176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profit and Loss</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Statement Type - EnumValue PL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2241122930 - EnumValue 912325668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>12 Month Analysis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Template Type - EnumValue 12 Months - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2241122930 - EnumValue 25700210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Template Type - EnumValue Balance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2241122930 - EnumValue 2996279696 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Template Type - EnumValue Balance List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2241122930 - EnumValue 1890982077 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cashflow</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Template Type - EnumValue Cashflow - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2241122930 - EnumValue 2060046985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed Asset List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum BT Template Type - EnumValue FA - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 978507003 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Administrator</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BT Admin - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 1954564791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Basic User</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BT Basic User - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 3989844755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BilanzTool Reporting</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BT Report User - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

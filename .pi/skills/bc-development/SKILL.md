@@ -184,10 +184,291 @@ MyApp/
 - **Use `Isolated` storage for temp tables**, explicitly scope data.
 - **`ModifyAll` / `DeleteAll`** with filters instead of looping large sets.
 - **Prefer `RecordRef`/`FieldRef`** for generic code; keep typed records for known tables.
-- **Always document procedures** with `///` XML comments.
+- **In Page-Feldern immer `Rec.`-Präfix verwenden** — direkte Feldnamen wie `SourceExpr = "My Field"` erzeugen AL0118. Stattdessen: `SourceExpr = Rec."My Field"`. Bei Feldern ohne Sonderzeichen: `Rec.MyField`. Dies gilt für alle Page-Typen (List, ListPart, Card, …) und sowohl im `repeater` als auch in `group`-Bereichen.
+- **`ListPart` für Rollencenter-Einbettung** — Pages, die in ein RoleCenter eingebettet werden (AL0269), müssen `PageType = ListPart` (oder `CardPart`) sein, nicht `List`/`Card`.
+- **Page-Element-Reihenfolge** — In Page-Objekten muss `actions` **vor** `trigger` stehen. Vertauschte Reihenfolge ergibt AL0104 (Syntax error). Gültige Reihenfolge: `properties` → `layout` → `actions` → `trigger` → `var`.
 - **Use `.gitignore`** for `.alpackages/`, `.vscode/` (selective), `*.app`, and output folders.
 
-## 7. Building & CI/CD Integration
+## 7. Setup-Tabellen (Microsoft-Standard-Pattern)
+
+Setup-Tabellen in Business Central sind **Singleton-Tabellen** — es gibt immer genau einen Datensatz pro App/Modul. Das Pattern stammt direkt aus Microsofts Base Application (z. B. `Sales & Receivables Setup`, `General Ledger Setup`).
+
+### 7.1 Table-Definition
+
+```al
+table 70000 "BC Gen.IF Setup"
+{
+    Caption = 'BC Gen.IF Setup';
+    DrillDownPageID = "BC Gen.IF Setup";   // Verlinkt Table → Page
+    LookupPageID = "BC Gen.IF Setup";       // Für Lookup-Trigger
+    DataClassification = CustomerContent;
+
+    fields
+    {
+        field(1; "Primary Key"; Code[10])
+        {
+            Caption = 'Primary Key';
+            DataClassification = SystemMetadata;
+        }
+    }
+
+    keys
+    {
+        key(PK; "Primary Key")
+        {
+            Clustered = true;
+        }
+    }
+}
+```
+
+**Wichtige Eigenschaften:**
+
+| Eigenschaft | Wert | Begründung |
+|-------------|------|------------|
+| `DrillDownPageID` | Setup-Page | Ermöglicht Sprung von Tabelle zur Einrichtungsseite |
+| `LookupPageID` | Setup-Page | Für Lookup-Aktionen auf das Setup |
+| `DataClassification` | `CustomerContent` | Wie Microsoft-Standard (Setup-Daten = Kundendaten) |
+| `field(1)` | `"Primary Key"` Code[10] | Der eine Singleton-Schlüssel |
+
+### 7.2 Page-Definition (Card)
+
+```al
+page 70002 "BC Gen.IF Setup"
+{
+    Caption = 'BC Gen.Interface Setup';
+    PageType = Card;
+    SourceTable = "BC Gen.IF Setup";
+    ApplicationArea = Basic, Suite;
+    UsageCategory = Administration;
+    DeleteAllowed = false;      // Verhindert Löschen des Setup-Datensatzes
+    InsertAllowed = false;      // Verhindert manuelles Einfügen
+
+    layout
+    {
+        area(Content)
+        {
+            group(General)
+            {
+                Caption = 'General';
+                // Setup-Felder hier
+            }
+        }
+    }
+
+    trigger OnOpenPage()
+    begin
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
+        end;
+    end;
+}
+```
+
+**⚠️ Kritisch: `OnOpenPage()`-Pattern**
+
+```al
+// ✅ RICHTIG — Microsoft-Standard:
+Rec.Reset();
+if not Rec.Get() then begin
+    Rec.Init();
+    Rec.Insert();
+end;
+
+// ❌ FALSCH — kein Reset(), kein Init():
+if not Rec.Get() then begin
+    Rec."Primary Key" := 'MYAPP';
+    Rec.Insert(true);
+end;
+```
+
+`Rec.Reset()` löscht alle Filter und setzt den Record zurück. `Rec.Init()` initialisiert Felder mit Default-Werten. `Rec.Insert()` ohne Parameter ist der Standard.
+
+### 7.3 Setup-Status prüfen
+
+Ob Setup bereits ausgeführt wurde, prüft man mit `Get()` auf die Setup-Tabelle:
+
+```al
+local procedure CheckSetupDone(): Boolean
+var
+    Setup: Record "My Setup";
+begin
+    Setup.Reset();
+    exit(Setup.Get());  // true = Setup existiert, false = noch nicht ausgeführt
+end;
+```
+
+### 7.4 Headline mit Setup-Erinnerung
+
+Typisches Muster: Headline-Part zeigt einen Link zur Setup-Seite, solange Setup noch nicht ausgeführt wurde.
+Nach dem ersten Öffnen der Setup-Seite (→ `Rec.Insert()`) verschwindet die Erinnerung automatisch.
+
+```al
+page 70003 "My Headline"
+{
+    PageType = HeadlinePart;
+
+    layout
+    {
+        area(Content)
+        {
+            group(SetupHeadline)
+            {
+                Visible = SetupNotDoneVisible;
+                field(SetupText; SetupNotDoneTxt)
+                {
+                    DrillDown = true;
+                    trigger OnDrillDown()
+                    begin
+                        Page.Run(Page::"My Setup");
+                    end;
+                }
+            }
+        }
+    }
+
+    trigger OnOpenPage()
+    var
+        Setup: Record "My Setup";
+    begin
+        Setup.Reset();
+        SetupNotDoneVisible := not Setup.Get();
+    end;
+
+    var
+        SetupNotDoneVisible: Boolean;
+        SetupNotDoneTxt: Label '<qualifier>Setup erforderlich</qualifier><payload>Bitte <emphasize>Setup ausführen</emphasize></payload>';
+}
+```
+
+### 7.5 CueGroups — Kacheln im Rollencenter
+
+CueGroups sind das Standard-Pattern für Status-Kacheln in BC-Rollencentern. Sie bestehen aus drei Komponenten:
+
+1. **Cue-Tabelle** — Singleton mit FlowFields für Zähler
+2. **Activities-Page** — CardPart mit `cuegroup`-Layout
+3. **Role Center** — bindet die Activities-Page als `part` ein
+
+#### 7.5.1 Cue-Tabelle
+
+```al
+table 70014 "My Cue"
+{
+    DataClassification = CustomerContent;
+
+    fields
+    {
+        field(1; "Primary Key"; Code[10])
+        {
+            DataClassification = SystemMetadata;
+        }
+        field(2; "Open Count"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("My Entry Table" where(Status = const(Open)));
+            Editable = false;
+        }
+        field(3; "Error Count"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count("My Entry Table" where(Status = const(Error)));
+            Editable = false;
+        }
+    }
+
+    keys
+    {
+        key(PK; "Primary Key") { Clustered = true; }
+    }
+}
+```
+
+**Regeln für Cue-Tabellen:**
+- `FieldClass = FlowField` — die Werte werden vom Server berechnet, nicht gespeichert
+- `Editable = false` — Kacheln sind nicht editierbar
+- Singleton-Pattern: `Rec.Reset(); if not Rec.Get() then Rec.Insert();` wie bei Setup-Tabellen
+- `CalcFormula` mit `where`-Filter für Status-basierte Zähler
+
+#### 7.5.2 Activities-Page (CardPart)
+
+```al
+page 70015 "My Activities"
+{
+    Caption = 'Activities';
+    PageType = CardPart;
+    SourceTable = "My Cue";
+    RefreshOnActivate = true;  // ← FlowFields neu berechnen bei Aktivierung
+
+    layout
+    {
+        area(Content)
+        {
+            cuegroup(MyGroup)
+            {
+                Caption = 'My Group';
+
+                field("Open Count"; Rec."Open Count")
+                {
+                    DrillDownPageID = "My List";
+                }
+                field("Error Count"; Rec."Error Count")
+                {
+                    Style = Attention;      // Rot/orange-Hervorhebung
+                    DrillDownPageID = "My List";
+                }
+            }
+        }
+    }
+
+    trigger OnOpenPage()
+    begin
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
+        end;
+    end;
+}
+```
+
+**Wichtige Eigenschaften:**
+- `PageType = CardPart` — Wird als Part in ein RoleCenter eingebettet
+- `RefreshOnActivate = true` — FlowFields werden beim Fokussieren aktualisiert (kein Page-Refresh nötig)
+- `DrillDownPageID` — Klick auf die Kachel öffnet die verlinkte Seite
+- `Style = Attention` — Hebt Problem-Kacheln visuell hervor (rot/orange)
+
+#### 7.5.3 Einbindung ins Role Center
+
+```al
+page 70001 "My Role Center"
+{
+    PageType = RoleCenter;
+
+    layout
+    {
+        area(rolecenter)
+        {
+            part(MyActivities; "My Activities")
+            {
+                ApplicationArea = Basic, Suite;
+            }
+        }
+    }
+}
+```
+
+#### 7.5.4 CueGroups vs. direkte ListParts
+
+| Ansatz | Verwendung |
+|--------|-----------|
+| **CueGroup (CardPart)** | Status-Kacheln mit Zählern, DrillDown zu Liste ✅ |
+| **Part (ListPart direkt)** | Liste ohne Kacheln, dauerhaft sichtbare Tabelle |
+
+> ⚠️ `group` mit `part` in `area(rolecenter)` wird in "Einblicke" einsortiert, nicht als Kachel/Stapel gerendert.
+
+## 8. Building & CI/CD Integration
 
 ### Simple build script (PowerShell)
 ```powershell

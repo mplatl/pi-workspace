@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <application>
+        <id>5f700cc9-dd17-4395-a3f6-226349665bd7</id>
+        <name>COSMO Cash Register</name>
+        <publisher>Cosmo Consult</publisher>
+        <version>22.0.13.0</version>
+    </application>
+    <members>
+        <member name="M:Codeunit::CCS CASH App# Area Enablement.OnAfterEnableApplicationAreas(Application Area Setup@)">
+            <summary>
+            The event is fired after the product application areas have been enabled, based on the setup and licensing.
+            </summary>
+            <param name="TempApplicationAreaSetup">The application area setup record.</param>
+            <param name="Setup">The product setup. The record might not be open, if no setup exists.</param>
+        </member>
+        <member name="M:Codeunit::CCS CASH License Management.GetAppId:Guid">
+            <summary>
+            Returns the app id
+            </summary>
+            <returns>The app info app id.</returns>
+        </member>
+        <member name="M:Codeunit::CCS CASH License Management.GetGranuleId(Enum::CCS LIC App Granule):Guid">
+            <summary>
+            Returns a guid of the granule. The granule can also be the app id.
+            </summary>
+            <param name="AppGranule">The granule to return the guid from.</param>
+            <returns>The granule guid.</returns>
+        </member>
+        <member name="M:Codeunit::CCS CASH License Management.GetGranuleName(Enum::CCS LIC App Granule):Text[128]">
+            <summary>
+            Returns the name of the granule. The granule can also be the app id.
+            </summary>
+            <param name="AppGranule">The granule to return the name from.</param>
+            <returns>The granule name.</returns>
+        </member>
+    </members>
+</doc>

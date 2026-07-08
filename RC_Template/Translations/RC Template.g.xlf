@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="RC Template">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 873250808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Headline - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 873250808 - NamedType 2683571823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;qualifier&gt;Demo KPI&lt;/qualifier&gt;&lt;payload&gt;&lt;emphasize&gt;%1&lt;/emphasize&gt; offene Verkaufsaufträge&lt;/payload&gt;</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Headline - NamedType OpenOrdersHeadlineLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 873250808 - Method 2600315387 - NamedType 96739838" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mehr über %1 erfahren?</source>
+          <note from="Developer" annotates="general" priority="2">%1 = App-Name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Headline - Method GetDocumentationText - NamedType DocumentationTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 873250808 - Control 1396140313 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Documentation headline</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Headline - Control DocumentationText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 873250808 - Control 3322762936 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Greeting headline</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Headline - Control GreetingText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 873250808 - Control 2356337675 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quick stats headline</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Headline - Control QuickStatsText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RC Demo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 228358710 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Schnellzugriff auf die Kundenliste.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoCustomersEmbedded - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 228358710 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kunden</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoCustomersEmbedded - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 988216757 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Schnellzugriff auf die Artikelliste.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoItemsEmbedded - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 988216757 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Artikel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoItemsEmbedded - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 1858944766 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Schnellzugriff auf die Lieferantenliste.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoVendorsEmbedded - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 1858944766 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lieferanten</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoVendorsEmbedded - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 1339058017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Neu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoNew - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 662577787 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Neuen Verkaufsauftrag anlegen.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoNewSalesOrder - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 662577787 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkaufsauftrag</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoNewSalesOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 1113135778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Berichte</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoReports - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 3877291548 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Liste der gebuchten Verkaufsrechnungen.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoPostedSalesInvoices - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 3877291548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gebuchte Verkaufsrechnungen</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoPostedSalesInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 1516181016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Demo-Bereich – hier eigene Aktionen einfügen.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoGroup - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 1516181016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Demo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 1757041624 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Öffnet die Kundenübersicht.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoCustomers - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 1757041624 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kunden</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoCustomers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 2836702642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Öffnet die Liste der Verkaufsaufträge.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoSalesOrders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 2836702642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Verkaufsaufträge</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoSalesOrders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 2452797968 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Öffnet die Lieferantenübersicht.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoVendors - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3924573598 - Action 2452797968 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lieferanten</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page RC Demo Template - Action DemoVendors - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737974076 - Action 1314795032 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Von RC Demo Template per PageExtension hinzugefügt.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RC Demo Cust. List Ext. - Action DemoExtAction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1737974076 - Action 1314795032 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>RC Demo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension RC Demo Cust. List Ext. - Action DemoExtAction - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

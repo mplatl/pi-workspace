@@ -50,3 +50,4 @@ docker-compose.override.yml
 
 # --- PowerShell ---
 *.ps1.xml
+bc-artifacts/
